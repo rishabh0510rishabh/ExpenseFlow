@@ -257,6 +257,7 @@ app.use('/api/2fa', require('./middleware/auth'), twoFactorAuthRoutes); // Issue
 app.use('/api/receipts', require('./routes/receipts'));
 app.use('/api/folders', require('./routes/folders'));
 app.use('/api/procurement', require('./routes/procurement'));
+app.use('/api/compliance', require('./routes/compliance'));
 
 // Import error handling middleware
 const { errorHandler, notFoundHandler } = require('./middleware/errorMiddleware');
